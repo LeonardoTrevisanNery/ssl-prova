@@ -1,0 +1,22 @@
+OpenSSL é uma biblioteca criptográfica de código aberto amplamente utilizada para implementar protocolos de segurança como TLS/SSL (Transport Layer Security / Secure Sockets Layer). Ele fornece funções para:
+
+Criptografia e descriptografia de dados
+
+Geração de certificados digitais (ex: para servidores web HTTPS)
+
+Criação de chaves públicas e privadas (RSA, ECC, etc.)
+
+Hash de dados (MD5, SHA-1, SHA-256)
+
+Assinaturas digitais
+
+Testes de conexão segura (ex: openssl s_client)
+
+1. apt update
+Atualiza a lista de pacotes disponíveis nos repositórios do sistema (Debian/Ubuntu). É uma boa prática antes de instalar qualquer software.
+
+2. apt install openssl -y
+Instala o pacote openssl no sistema. O -y confirma automaticamente a instalação sem perguntar ao usuário.
+
+3. openssl version
+Exibe a versão do OpenSSL instalada.
