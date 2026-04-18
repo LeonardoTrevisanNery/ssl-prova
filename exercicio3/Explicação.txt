@@ -1,1 +1,10 @@
-# ssl-prova
+openssl genrsa -out aluno.key 2048
+
+Gera um par de chaves RSA (chave privada e chave pública) de 2048 bits, salvando a chave privada no arquivo aluno.key.
+
+Detalhamento de cada parte:
+Parte do comando	Significado
+openssl	Ferramenta de criptografia de código aberto (OpenSSL) - usada para criar certificados, chaves, etc.
+genrsa	Generate RSA - gera um par de chaves usando o algoritmo RSA
+-out aluno.key	Output - define o nome do arquivo onde a chave privada será salva (aluno.key)
+2048	Tamanho da chave em bits (2048 bits = segurança padrão atualmente)
