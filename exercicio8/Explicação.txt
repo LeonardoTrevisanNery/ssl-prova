@@ -1,1 +1,30 @@
-# ssl-prova
+┌─────────────────────────────────────────────────────────────────┐
+│                    DETALHES DO CERTIFICADO                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  EMITIDO PARA (Subject)                                         │
+│  ├── País (C): BR                                               │
+│  ├── Estado (ST): Sao-paulo                                     │
+│  ├── Cidade (L): Piracicaba                                     │
+│  ├── Organização (O): EEP                                       │
+│  ├── Unidade Organizacional (OU): None                          │
+│  ├── Nome Comum (CN): Cibersec                                  │
+│  └── Email: email@email.com                                     │
+│                                                                 │
+│  EMITIDO POR (Issuer)                                           │
+│  └── Os MESMOS dados acima (porque é autoassinado)              │
+│                                                                 │
+│  PERÍODO DE VALIDADE                                            │
+│  ├── Válido de: [data atual]                                   │
+│  └── Válido até: [data atual + 365 dias]                       │
+│                                                                 │
+│  INFORMAÇÕES DA CHAVE                                           │
+│  ├── Algoritmo: RSA                                             │
+│  ├── Tamanho: 2048 bits                                         │
+│  └── Utilização: Assinatura digital, Criptografia de chave     │
+│                                                                 │
+│  IMPRESSÃO DIGITAL (Fingerprint)                                │
+│  ├── SHA-256: [sequência de 64 caracteres hexadecimais]        │
+│  └── SHA-1: [sequência de 40 caracteres hexadecimais]          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
