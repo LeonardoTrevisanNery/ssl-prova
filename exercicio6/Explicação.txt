@@ -1,1 +1,16 @@
-# ssl-prova
+scp aluno.crt root@localhost:/etc/ssl/certificates/
+O que o comando faz:
+Copia o arquivo aluno.crt (certificado digital) de um diretório para outro usando o protocolo SCP (Secure Copy Protocol). Neste caso específico, está copiando da pasta atual para o mesmo local (/etc/ssl/certificates/), mas através de uma conexão SSH.
+
+scp	Secure Copy Protocol - protocolo de cópia segura via SSH
+aluno.crt	Arquivo de origem (o certificado que será copiado)
+root@localhost	Usuário (root) e destino (localhost = esta mesma máquina)
+:/etc/ssl/certificates/	Caminho de destino no servidor remoto
+
+scp   [ORIGEM]              [DESTINO]
+      ↓                     ↓
+scp   aluno.crt             root@localhost:/etc/ssl/certificates/
+                            ↑                ↑
+                        usuário@host      caminho
+
+A saída mostra apenas o nome do arquivo copiado (aluno.crt), indicando que a cópia foi bem-sucedida. O SCP é silencioso quando funciona corretamente.
