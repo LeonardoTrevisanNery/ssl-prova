@@ -1,1 +1,10 @@
-# ssl-prova
+SSL_ERROR_RX_RECORD_TOO_LONG
+O SSL recebeu um registro que excede o tamanho máximo permitido.
+
+O navegador tentou conversar em "HTTPS" (linguagem criptografada), mas o servidor só fala "HTTP" (linguagem texto puro). Eles não se entenderam.
+
+O navegador começou a conversa em HTTPS (protocolo criptografado), mas o servidor Python só entende HTTP (protocolo texto puro). O servidor tentou interpretar os dados criptografados como se fossem texto puro e "se confundiu", achando que era um registro gigante inválido.
+
+python3 -m http.server 8443 --bind 0.0.0.0
+
+Este comando cria um servidor HTTP (sem criptografia), mas o exercício manda acessar com HTTPS gerando o erro
