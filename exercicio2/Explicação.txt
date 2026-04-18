@@ -1,1 +1,34 @@
-# ssl-prova
+mkdir /etc/ssl/certificates
+O que faz:
+Cria um diretório (pasta) chamado certificates dentro do caminho /etc/ssl/.
+
+Detalhamento:
+
+Parte do comando	Significado
+mkdir	Make Directory - comando para criar pastas
+/etc/ssl/	Diretório padrão do sistema onde ficam os certificados SSL/TLS
+certificates	Nome da nova pasta que será criada
+Por que usar:
+
+Organizar os certificados digitais em um local padrão do sistema
+
+O diretório /etc/ssl/ já existe no Linux, mas a subpasta certificates pode não existir
+
+Muitas aplicações esperam encontrar certificados nesse local
+---------------------------------------------------------------------------------------------
+cd /etc/ssl/certificates
+O que faz:
+Change Directory - muda o diretório atual do terminal para /etc/ssl/certificates.
+
+Detalhamento:
+
+Parte do comando	Significado
+cd	Change Directory - comando para navegar entre pastas
+/etc/ssl/certificates	Caminho completo (absoluto) para onde você quer ir
+Por que usar:
+
+Após criar a pasta, você precisa "entrar" nela para trabalhar
+
+Todos os comandos seguintes (como openssl, ls, scp) serão executados dentro desta pasta
+
+Evita ficar digitando o caminho completo toda vez
