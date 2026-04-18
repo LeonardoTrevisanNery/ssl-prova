@@ -1,1 +1,18 @@
-# ssl-prova
+openssl x509 -req -days 365 -in aluno.csr -signkey aluno.key -out aluno.crt
+O que o comando faz:
+Este comando cria um certificado digital autoassinado a partir da CSR (Certificate Signing Request) e da chave privada. O certificado gerado (aluno.crt) é o documento final que será usado para autenticação e criptografia.
+
+Detalhamento de cada parte:
+Parte do comando	Significado
+openssl x509	Comando para trabalhar com certificados no formato X.509 (padrão internacional)
+-req	Indica que a entrada é uma CSR (Certificate Signing Request)
+-days 365	Define a validade do certificado por 365 dias (1 ano)
+-in aluno.csr	Arquivo de entrada - a CSR que você criou anteriormente
+-signkey aluno.key	Usa esta chave privada para autoassinar o certificado
+-out aluno.crt	Arquivo de saída - onde o certificado será salvo
+
+Certificate request self-signature ok
+subject=C=BR, ST=Sao-paulo, L=Piraciaba, O=EEP, OU=None, CN=Cibersec, emailAddress=email@email.com
+
+Certificate request self-signature ok	A assinatura da CSR foi verificada e está correta
+subject=...	Os dados do proprietário do certificado (os mesmos que você preencheu na CSR)
