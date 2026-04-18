@@ -1,1 +1,34 @@
-# ssl-prova
+Explicação do comando openssl req -new -key aluno.key -out aluno.csr
+O que o comando faz:
+Cria uma CSR (Certificate Signing Request) - uma "solicitação de assinatura de certificado" - usando a chave privada aluno.key e salvando no arquivo aluno.csr
+
+openssl req	Comando para trabalhar com solicitações de certificado (Certificate Request)
+-new	Cria uma nova CSR (não usa uma existente)
+-key aluno.key	Especifica qual chave privada será usada para assinar a solicitação
+-out aluno.csr	Nome do arquivo de saída onde a CSR será salva
+
+CSR significa Certificate Signing Request (Solicitação de Assinatura de Certificado). É como se fosse um formulário de identidade digital que você preenche para solicitar um certificado digital.
+
+CSR contém 3 componentes principais:
+
+ 1. DADOS DO SOLICITANTE (Distinguished Name)         
+     • País: Brasil                                     
+     • Estado: São Paulo                                
+     • Cidade: Piracicaba                               
+     • Organização: EEP                                 
+     • Nome Comum: Cibersec                             
+     • Email: email@email.com                          
+                                                        
+  2. CHAVE PÚBLICA                                      
+     (extraída do arquivo aluno.key)                    
+                                                        
+  3. ASSINATURA DIGITAL                                 
+     (feita com a chave privada para provar que você    
+      é o dono legítimo daquela chave) 
+
+
+Para que serve a CSR?
+Destino	Finalidade
+Autoridade Certificadora (CA)	A CA usa a CSR para emitir um certificado digital assinado
+Você	Enviar para a CA e depois gerar certificados autoassinados
+Ninguém mais	A CSR é segura para compartilhar (não contém chave privada)
